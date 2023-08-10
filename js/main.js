@@ -348,3 +348,17 @@ function toggleAdditionalText(event) {
 	  readMoreLink.textContent = "Mostrar más";
 	}
   }
+
+  function toggleAdditionalText2(event) {
+	event.preventDefault();
+	const readMoreLink = event.target;
+	const additionalText = readMoreLink.closest('.animate-box').querySelector('.additional-text');
+  
+	if (additionalText.style.display === 'none') {
+	  additionalText.style.display = 'block';
+	  readMoreLink.textContent = 'Ocultar equipo';
+	} else {
+	  additionalText.style.display = 'none';
+	  readMoreLink.textContent = "Quiero ver al equipo FashionCodes";
+	}
+  }
