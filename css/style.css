@@ -518,7 +518,6 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table;
   width: 100%;
 }
-
 @media screen and (max-width: 768px) {
   .gtco-cover.gtco-cover-sm .display-t,
   .gtco-cover.gtco-cover-sm .display-tc {
@@ -564,7 +563,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #gtco-about .img-shadow {
   position: relative;
-  background: #0000ff;
+  background: #0000FF;
   width: 100%;
   float: left;
 }
@@ -643,7 +642,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: block;
 }
 #gtco-our-team .team-item {
-  margin-bottom: 5em;
+  margin-bottom: 3.5em;
 }
 #gtco-our-team .team-item:last-child {
   margin-bottom: 0;
@@ -651,7 +650,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-our-team .gtco-team-reverse .img-shadow,
 #gtco-our-team .gtco-team .img-shadow {
   position: relative;
-  background: #0000ff;
+  background: #0000FF;
   width: 100%;
   float: left;
   margin-bottom: 30px;
@@ -660,7 +659,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-our-team .gtco-team .img-shadow img {
   position: relative;
   top: -20px;
-  right: 0px;
+  right: -20px;
 }
 #gtco-our-team .gtco-team .img-shadow img {
   top: -20px;
@@ -944,7 +943,6 @@ form label {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-
 @media screen and (max-width: 768px) {
   #gtco-offcanvas {
     display: block;
