@@ -335,6 +335,8 @@
 
 }());
 
+// Eventos de esconder y mostrar texto de seccion bienvenido y seccion equipo
+
 function toggleAdditionalText(event) {
 	event.preventDefault();
 	const readMoreLink = event.target;
@@ -362,3 +364,58 @@ function toggleAdditionalText(event) {
 	  readMoreLink.textContent = "Quiero ver al equipo FashionCodes";
 	}
   }
+
+// Modal de mateo
+
+document.addEventListener("DOMContentLoaded", function() {
+	document.getElementById("openModal-mateo").addEventListener("click", function() {
+		document.getElementById("myModal-mateo").style.display = "block";
+	  });
+	  
+	  document.getElementsByClassName("close")[0].addEventListener("click", function() {
+		document.getElementById("myModal-mateo").style.display = "none";
+	  });
+	  
+	  window.addEventListener("click", function(event) {
+		if (event.target === document.getElementById("myModal-mateo")) {
+		  document.getElementById("myModal-mateo").style.display = "none";
+		}
+	  });
+  });
+
+
+  // Modal de jp
+
+document.addEventListener("DOMContentLoaded", function() {
+	document.getElementById("openModal-jp").addEventListener("click", function() {
+		document.getElementById("myModal-jp").style.display = "block";
+	  });
+	  
+	  document.getElementsByClassName("close-jp")[0].addEventListener("click", function() {
+		document.getElementById("myModal-jp").style.display = "none";
+	  });
+	  
+	  window.addEventListener("click", function(event) {
+		if (event.target === document.getElementById("myModal-jp")) {
+		  document.getElementById("myModal-jp").style.display = "none";
+		}
+	  });
+  });
+
+    // Modal de jhon
+
+document.addEventListener("DOMContentLoaded", function() {
+	document.getElementById("openModal-jhon").addEventListener("click", function() {
+		document.getElementById("myModal-jhon").style.display = "block";
+	  });
+	  
+	  document.getElementsByClassName("close-jhon")[0].addEventListener("click", function() {
+		document.getElementById("myModal-jhon").style.display = "none";
+	  });
+	  
+	  window.addEventListener("click", function(event) {
+		if (event.target === document.getElementById("myModal-jhon")) {
+		  document.getElementById("myModal-jhon").style.display = "none";
+		}
+	  });
+  });
