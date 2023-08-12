@@ -733,6 +733,11 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #0000FF;
 }
 
+.read-more{
+  background-color: #0000ff !important; /* Color azul (#0000FF) para el texto */
+  color: #ffffff !important;
+}
+
 .read-more i {
   position: relative;
   top: 2px;
