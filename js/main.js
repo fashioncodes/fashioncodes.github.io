@@ -437,3 +437,21 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 	  });
   });
+
+  	// Modal de Marlon
+
+	  document.addEventListener("DOMContentLoaded", function() {
+		document.getElementById("openModal-marlon").addEventListener("click", function() {
+			document.getElementById("myModal-marlon").style.display = "block";
+		  });
+		  
+		  document.getElementsByClassName("close-marlon")[0].addEventListener("click", function() {
+			document.getElementById("myModal-marlon").style.display = "none";
+		  });
+		  
+		  window.addEventListener("click", function(event) {
+			if (event.target === document.getElementById("myModal-marlon")) {
+			  document.getElementById("myModal-marlon").style.display = "none";
+			}
+		  });
+	  });
