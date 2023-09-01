@@ -657,7 +657,6 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #gtco-our-team .gtco-team-reverse .img-shadow img,
 #gtco-our-team .gtco-team .img-shadow img {
-  position: relative;
   top: -20px;
   right: -20px;
 }
@@ -1378,6 +1377,7 @@ h1.animate-box.fadeIn.animated-fast {
 .crecimiento{
   text-align: center;
   font-size: 25px;
+  margin-top: 60px;
 }
 
 .buttonservices{
@@ -1399,14 +1399,15 @@ h1.animate-box.fadeIn.animated-fast {
 
 .titulo-text-team{
   text-align: center;
+  font-size: 25px;
 }
 
 .titulo-team{
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .titulo-profesion{
-  font-size: 20px;
+  font-size: 22px;
 }
 
 /* Dispositivos pequeños (ejemplo: smartphones en posición vertical) */
@@ -1563,31 +1564,38 @@ h1.animate-box.fadeIn.animated-fast {
 
 /* Responsive de las imagenes */
 
+
+@media only screen and (max-width: 769px) {
+
 .img-responsive-mateo{
-  width: 350px; /* Ancho de la imagen */
+  width: 250px; /* Ancho de la imagen */
   height: auto; /* Alto de la imagen */
+
 }
 
 .img-responsive-jp{
-  width: 350px; /* Ancho de la imagen */
+  width: 250px; /* Ancho de la imagen */
   height: auto; /* Alto de la imagen */
 }
 
 .img-responsive-jhon{
-  width: 350px; /* Ancho de la imagen */
+  width: 250px; /* Ancho de la imagen */
   height: auto; /* Alto de la imagen */
+
 }
 
 .img-responsive-dqh{
-  width: 350px; /* Ancho de la imagen */
+  width: 250px; /* Ancho de la imagen */
   height: auto; /* Alto de la imagen */
+
 }
 
 .img-responsive-marlon{
-  width: 350px; /* Ancho de la imagen */
+  width: 250px; /* Ancho de la imagen */
   height: auto; /* Alto de la imagen */
-}
 
+}
+}
 
 
 
@@ -1597,11 +1605,10 @@ h1.animate-box.fadeIn.animated-fast {
   #gtco-our-team .gtco-team-reverse .img-shadow,
   #gtco-our-team .gtco-team .img-shadow {
     position: relative;
-    background: #0000ff;
+    background: #ffffff;
     width: 100%;
     float: left;
     margin-bottom: 30px;
-    width: 400px;
   }
 }
 
@@ -1614,7 +1621,6 @@ h1.animate-box.fadeIn.animated-fast {
     width: 100%;
     float: left;
     margin-bottom: 30px;
-    width: 400px;
   }
 }
 
@@ -1627,82 +1633,79 @@ h1.animate-box.fadeIn.animated-fast {
     width: 100%;
     float: left;
     margin-bottom: 30px;
-    width: 400px;
   }
 }
 
-
 @media only screen and (min-width: 769px) {
-  .team-our {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.team-our {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team-item {
+  position: relative; /* Add relative positioning */
+  width: 48%; /* Adjust as needed */
+  margin-bottom: 20px; /* Adjust margin as needed */
+  transition: transform 0.3s, z-index 0.3s; /* Add transition for smooth effect */
+}
+
+.team-item:hover {
+  transform: scale(2); /* Enlarge the image on hover by 20% */
+  z-index: 1; /* Bring the hovered item to the top */
+  background-color: #f7f7f7;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.team-item .img-shadow {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.team-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.titulo-profesion, .titulo-team {
+  margin: 10px 0;
+}
+
+.fa-brands, .fab {
+  margin-right: 10px;
+  font-size: 20px;
+}
+}
+
+.typewriter {
+  overflow: hidden; /* Oculta el texto sobrante */
+  border-right: .15em solid #0000ff; /* Simula el cursor de escritura */
+  white-space: nowrap; /* Evita el salto de línea */
+  margin: 0 auto; /* Centra el texto */
+  letter-spacing: .20em; /* Espaciado entre letras */
+  animation:
+    typing 5.5s steps(40, end),
+    blink-caret .60s step-end infinite;
+    animation-iteration-count: infinite;
+}
+
+/* Animación de escritura */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  .team-item {
-    position: relative; /* Add relative positioning */
-    width: 48%; /* Adjust as needed */
-    margin-bottom: 20px; /* Adjust margin as needed */
-    transition: transform 0.3s, z-index 0.3s; /* Add transition for smooth effect */
+  to {
+    width: 100%;
   }
-  
-  .team-item:hover {
-    transform: scale(2); /* Enlarge the image on hover by 20% */
-    z-index: 1; /* Bring the hovered item to the top */
-    background-color: #f7f7f7;
-    border-radius: 30px;
-    padding: 20px;
+}
+
+/* Animación de parpadeo del cursor */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
   }
-  
-  .team-item .img-shadow {
-    max-width: 100%;
-    overflow: hidden;
+  50% {
+    border-color: #0000ff86;
   }
-  
-  .team-item img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .titulo-profesion, .titulo-team {
-    margin: 10px 0;
-  }
-  
-  .fa-brands, .fab {
-    margin-right: 10px;
-    font-size: 20px;
-  }
-  }
-  
-  .typewriter {
-    overflow: hidden; /* Oculta el texto sobrante */
-    border-right: .15em solid #0000ff; /* Simula el cursor de escritura */
-    white-space: nowrap; /* Evita el salto de línea */
-    margin: 0 auto; /* Centra el texto */
-    letter-spacing: .20em; /* Espaciado entre letras */
-    animation:
-      typing 5.5s steps(40, end),
-      blink-caret .60s step-end infinite;
-      animation-iteration-count: infinite;
-  }
-  
-  /* Animación de escritura */
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  /* Animación de parpadeo del cursor */
-  @keyframes blink-caret {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #0000ff86;
-    }
-  }
-  
+}
