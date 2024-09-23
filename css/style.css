@@ -1516,15 +1516,15 @@ h1.animate-box.fadeIn.animated-fast {
   cursor: pointer;
 }
 
-.close-marlon {
+.close-damian {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close-marlon:hover,
-.close-marlon:focus {
+.close-damian:hover,
+.close-damian:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -1590,7 +1590,7 @@ h1.animate-box.fadeIn.animated-fast {
 
 }
 
-.img-responsive-marlon{
+.img-responsive-damian{
   width: 250px; /* Ancho de la imagen */
   height: auto; /* Alto de la imagen */
 
