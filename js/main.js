@@ -402,20 +402,20 @@ document.addEventListener("DOMContentLoaded", function() {
 	  });
   });
 
-    // Modal de jhon
+    // Modal de duque
 
 document.addEventListener("DOMContentLoaded", function() {
-	document.getElementById("openModal-jhon").addEventListener("click", function() {
-		document.getElementById("myModal-jhon").style.display = "block";
+	document.getElementById("openModal-duque").addEventListener("click", function() {
+		document.getElementById("myModal-duque").style.display = "block";
 	  });
 	  
-	  document.getElementsByClassName("close-jhon")[0].addEventListener("click", function() {
-		document.getElementById("myModal-jhon").style.display = "none";
+	  document.getElementsByClassName("close-duque")[0].addEventListener("click", function() {
+		document.getElementById("myModal-duque").style.display = "none";
 	  });
 	  
 	  window.addEventListener("click", function(event) {
-		if (event.target === document.getElementById("myModal-jhon")) {
-		  document.getElementById("myModal-jhon").style.display = "none";
+		if (event.target === document.getElementById("myModal-duque")) {
+		  document.getElementById("myModal-duque").style.display = "none";
 		}
 	  });
   });
