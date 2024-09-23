@@ -1530,6 +1530,19 @@ h1.animate-box.fadeIn.animated-fast {
   cursor: pointer;
 }
 
+.close-david {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-david:hover,
+.close-david:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 /* Dispositivos pequeños (ejemplo: smartphones en posición vertical) */
@@ -1594,6 +1607,11 @@ h1.animate-box.fadeIn.animated-fast {
   width: 250px; /* Ancho de la imagen */
   height: auto; /* Alto de la imagen */
 
+}
+
+.img-responsive-david{
+width: 250px; /* Ancho de la imagen */
+height: auto; /* Alto de la imagen */
 }
 }
 
