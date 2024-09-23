@@ -455,3 +455,22 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 		  });
 	  });
+
+// Modal de Daniel Quinchia
+
+  document.addEventListener("DOMContentLoaded", function() {
+	document.getElementById("openModal-david").addEventListener("click", function() {
+		document.getElementById("myModal-david").style.display = "block";
+	  });
+	  
+	  document.getElementsByClassName("close-david")[0].addEventListener("click", function() {
+		document.getElementById("myModal-david").style.display = "none";
+	  });
+	  
+	  window.addEventListener("click", function(event) {
+		if (event.target === document.getElementById("myModal-david")) {
+		  document.getElementById("myModal-david").style.display = "none";
+		}
+	  });
+  });
+
