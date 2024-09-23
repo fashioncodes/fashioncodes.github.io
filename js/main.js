@@ -438,20 +438,20 @@ document.addEventListener("DOMContentLoaded", function() {
 	  });
   });
 
-  	// Modal de Marlon
+  	// Modal de damian
 
 	  document.addEventListener("DOMContentLoaded", function() {
-		document.getElementById("openModal-marlon").addEventListener("click", function() {
-			document.getElementById("myModal-marlon").style.display = "block";
+		document.getElementById("openModal-damian").addEventListener("click", function() {
+			document.getElementById("myModal-damian").style.display = "block";
 		  });
 		  
-		  document.getElementsByClassName("close-marlon")[0].addEventListener("click", function() {
-			document.getElementById("myModal-marlon").style.display = "none";
+		  document.getElementsByClassName("close-damian")[0].addEventListener("click", function() {
+			document.getElementById("myModal-damian").style.display = "none";
 		  });
 		  
 		  window.addEventListener("click", function(event) {
-			if (event.target === document.getElementById("myModal-marlon")) {
-			  document.getElementById("myModal-marlon").style.display = "none";
+			if (event.target === document.getElementById("myModal-damian")) {
+			  document.getElementById("myModal-damian").style.display = "none";
 			}
 		  });
 	  });
